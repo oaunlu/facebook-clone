@@ -1,0 +1,25 @@
+.homeBody {
+    background-color: #18191A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.leftBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #18191A;
+    }
+
+.rightBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import logo from './nav-bar-icons/facebook-logo.svg'
+import headerButtons from './headerButtons.json'
 import './App.css';
+import Home from './Home';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+  const renderButtons = (divId) => {
+    return headerButtons[divId].map(button => {
+      return(
+        <a 
+          className={button.className}
+          href={button.href}
         >
-          Learn React
+          { button.className }
+          <img 
+            src={button.icon}
+            alt={button.alt}
+          ></img>
         </a>
+      )
+    });
+  }
+
+  return (
+    <div>
+      <header className='header'>
+        <div className='leftHeader'>
+          <a href='localhost:3000'>
+            <img className='App-logo' src={logo} alt="logo"></img>
+          </a>
+          <input className='searchBox' type="search" placeholder='Search Facebook'></input>
+        </div>
+        <div className='middleHeader'>
+          { renderButtons('middleHeader') }
+        </div>
+        <div className='rightHeader'>
+          { renderButtons('rightHeader') }
+        </div>
       </header>
+      <div className='body'>
+        <Home/>
+      </div>
     </div>
   );
 }
