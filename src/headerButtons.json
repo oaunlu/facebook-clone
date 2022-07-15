@@ -4,31 +4,31 @@
             "className": "Home",
             "icon": "/src/nav-bar-icons/home-icon.svg",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "/"
         },
         {
             "className": "Pages",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "/pages"
         },
         {
             "className": "Watch",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "/watch"
         },
         {
             "className": "Marketplace",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "/marketplace"
         },
         {
             "className": "Groups",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "/groups"
         }
     ],
     "rightHeader": [
@@ -36,25 +36,25 @@
             "className": "Menu",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "localhost:3000"
         },
         {
             "className": "Messages",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "localhost:3000"
         },
         {
             "className": "Notifications",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "localhost:3000"
         },
         {
             "className": "Profile",
             "icon": "",
             "alt": "logo",
-            "href": "localhost:3000"
+            "route": "localhost:3000"
         }
     ]
 }

@@ -24,8 +24,20 @@
   text-align: center;
 }
 
+.middleHeader ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
 .rightHeader {
   text-align: end;
+}
+
+.rightHeader ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 .App-logo {

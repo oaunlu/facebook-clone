@@ -1,6 +1,6 @@
 import './Home.css';
-import Posts from './Posts';
-import Stories from './Stories';
+import Posts from './Components/Posts';
+import Stories from './Components/Stories';
 
 function Home(){
     const renderButtons = () => {
@@ -21,7 +21,6 @@ function Home(){
             </div>
             <div className='slider'>
                 <Stories/>
-                <div className='newPost'></div>
                 { renderButtons() }
                 <Posts/>
             </div>
