@@ -1,4 +1,4 @@
-import './Home.css';
+import './Home.sass';
 import Posts from './Components/Posts';
 import Stories from './Components/Stories';
 

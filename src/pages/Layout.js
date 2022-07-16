@@ -1,20 +1,29 @@
-import './Layout.css';
+import './Layout.sass';
 import { Outlet, Link } from "react-router-dom";
 import logo from '../nav-bar-icons/facebook-logo.svg';
+import homeIcon from '../nav-bar-icons/home-icon.svg';
+import pagesIcon from '../nav-bar-icons/pages-icon.svg';
+import watchIcon from '../nav-bar-icons/watch-icon.svg';
+import marketplaceIcon from '../nav-bar-icons/marketplace-icon.svg';
+import groupsIcon from '../nav-bar-icons/groups-icon.svg';
+import menuIcon from '../nav-bar-icons/menu-icon.svg';
+import messengerIcon from '../nav-bar-icons/messenger-icon.svg';
+import notificationsIcon from '../nav-bar-icons/notifications-icon.svg';
 import headerButtons from '../headerButtons.json';
 
 const Layout = () => {
   const renderButtons = (divId) => {
-    return headerButtons[divId].map(button => {
+    let midIcons = [homeIcon, pagesIcon, watchIcon, marketplaceIcon, groupsIcon];
+    let rightIcons = [menuIcon, messengerIcon, notificationsIcon, null];
+    return headerButtons[divId].map((button, index) => {
       return(
         <li>
           <Link 
             className={button.className} 
             to={button.route}
           >
-            { button.className }
             <img 
-              src={button.icon}
+              src={divId === 'middleHeader' ? midIcons[index] : rightIcons[index]}
               alt={button.alt}
             ></img>
           </Link>
@@ -48,9 +57,11 @@ const Layout = () => {
           </nav>
         </div>
         <div className='rightHeader'>
-          <ul>
-            { renderButtons('rightHeader') }
-          </ul>
+          <nav>
+            <ul>
+              { renderButtons('rightHeader') }
+            </ul>
+          </nav>
         </div>
       </header>
       <div className='body'>

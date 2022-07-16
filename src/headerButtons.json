@@ -2,31 +2,26 @@
     "middleHeader": [
         {
             "className": "Home",
-            "icon": "/src/nav-bar-icons/home-icon.svg",
             "alt": "logo",
             "route": "/"
         },
         {
             "className": "Pages",
-            "icon": "",
             "alt": "logo",
             "route": "/pages"
         },
         {
             "className": "Watch",
-            "icon": "",
             "alt": "logo",
             "route": "/watch"
         },
         {
             "className": "Marketplace",
-            "icon": "",
             "alt": "logo",
             "route": "/marketplace"
         },
         {
             "className": "Groups",
-            "icon": "",
             "alt": "logo",
             "route": "/groups"
         }
@@ -34,25 +29,21 @@
     "rightHeader": [
         {
             "className": "Menu",
-            "icon": "",
             "alt": "logo",
             "route": "localhost:3000"
         },
         {
             "className": "Messages",
-            "icon": "",
             "alt": "logo",
             "route": "localhost:3000"
         },
         {
             "className": "Notifications",
-            "icon": "",
             "alt": "logo",
             "route": "localhost:3000"
         },
         {
             "className": "Profile",
-            "icon": "",
             "alt": "logo",
             "route": "localhost:3000"
         }
